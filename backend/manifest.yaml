@@ -33,10 +33,10 @@ spec:
     spec:
       containers:
       - name: backend
-        image: joindevops/backend:v1.0
+        image: joindevops/backend
         envFrom:
         - configMapRef:
-            name: backend
+          name: backend
 ---
 apiVersion: v1
 kind: Service
